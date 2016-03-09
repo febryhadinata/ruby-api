@@ -1,0 +1,7 @@
+{
+  "name": "Wakz-Ruby-API Sample",
+  "description": "A mini simple API application",
+  "repository": "https://github.com/febryhadinata/ruby-api",
+  "logo": "https://www.cleardb.com/images/ruby-256x256.png",
+  "keywords": ["ruby", "api"]
+}

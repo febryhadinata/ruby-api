@@ -61,6 +61,16 @@ class UsersController < ApplicationController
     end
   end
 
+  # GET /users/get_all_users
+  # GET /users/get_all_users.json
+  def get_all_users
+    @users = User.all
+    respond_to do |format|
+      format.html { render :index }
+      format.json { render json: @users }
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user

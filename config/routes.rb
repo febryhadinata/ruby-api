@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :microposts do 
+    collection do
+      get 'get_all_microposts'
+    end
+  end
+  
   resources :users do
     collection do
       get 'get_all_users'

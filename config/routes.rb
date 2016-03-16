@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
+
+  # static pages
+  get 'static_pages/home'
+  get 'static_pages/help'
+
+  # resources
   resources :microposts do 
     collection do
       get 'get_all_microposts'
     end
   end
   
+  # resources
   resources :users do
     collection do
       get 'get_all_users'
